@@ -11,7 +11,7 @@ on:
 
 jobs:
   helm_push:
-    uses: Sases/reusable-workflows/.github/workflows/helm-process.yml@main
+    uses: Ssases/reusable-workflows/.github/workflows/helm-process.yml@main
     with:
       helm_package: helm/surface
       version: 0.1.10-9-ged17d99
