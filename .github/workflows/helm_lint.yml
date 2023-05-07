@@ -11,4 +11,4 @@ on:
 
 jobs:
   helm_lint:
-    uses: Ssases/reusable/.github/workflows/helm_lint.yml@main
+    uses: Ssases/reusable-workflows/.github/workflows/helm_lint.yml@main
