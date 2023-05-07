@@ -14,4 +14,4 @@ jobs:
     uses: Ssases/reusable-workflows/.github/workflows/helm-process.yml@main
     with:
       helm_package: helm/surface
-      version: 0.1.11-9-ged17d99
+      version: 3656589
