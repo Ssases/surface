@@ -1,0 +1,14 @@
+name: Lint
+
+on:
+  push:
+    branches:
+      - main
+  workflow_run:
+    workflows: ["tag_manage", "tag_output"]
+    types:
+      - completed
+
+jobs:
+  helm_lint:
+    uses: Ssases/reusable/.github/workflows/helm_lint.yml@main
