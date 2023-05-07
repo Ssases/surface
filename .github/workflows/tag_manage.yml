@@ -18,6 +18,6 @@ jobs:
      
      - name: tag output
        run: |
-          echo ${{ needs.tag_manage.outputs.computed_tag_prod }}
+          echo ${{ needs.tag.outputs.computed_tag_prod }}
          # echo ${{ needs.tag_manage.outputs.tag_version_dev }}
        
