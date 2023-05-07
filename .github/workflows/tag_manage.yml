@@ -17,4 +17,7 @@ jobs:
      steps:
      
      - name: tag output
-       run: echo ${{ needs.tag_manage.outputs.GIT_TAG }}
+       run: |
+          echo ${{ needs.tag_manage.outputs.tag_version_dev }}
+          echo ${{ needs.tag_manage.outputs.tag_version_dev }}
+       
