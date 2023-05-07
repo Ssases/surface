@@ -1,0 +1,18 @@
+# # (C) Copyright 2023 Hewlett Packard Enterprise Development LP
+# # Workflow to compute tags using tag-manage script
+name: Tag Manage
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - master
+
+permissions:
+  contents: read  # contents needed for checkout
+  packages: read  # packages needed to read the build container
+
+jobs:
+  tag_manage:
+    uses: Ssases/reusable-workflows/.github/workflows/tag_manage_RW.yml@main
